@@ -40,6 +40,7 @@ main {
     line-height: 23px;
     outline: none;
     padding: 0.75rem;
+    margin: 0rem 3rem;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     border-bottom-left-radius: 15px 255px;
@@ -82,7 +83,9 @@ main {
 
   .btn {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    // justify-content: space-evenly;
   }
 
   .card {
