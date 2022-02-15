@@ -4,35 +4,57 @@
     <title>Higher or Lower</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
-      type="text/javascript"></script>
+      type="text/javascript"
+    ></script>
     <meta charset="UTF-8" />
-    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
-        <div class="header__wrapper">
-            <h1 class="header__heading">Play Higher or Lower</h1>
-            <h2 class="header__subheading">How in a row can you get?</h2>
-        </div>
+      <div class="header__wrapper">
+        <h1 class="header__heading">Play Higher or Lower</h1>
+        <h2 class="header__subheading">How in a row can you get?</h2>
+      </div>
     </header>
     <main>
-        <div class="main" id="app">
-            <button class="main__btn" id="high">Higher</button>
-            <button class="main__btn" id="low">Lower</button>
+      <div class="main" id="app">
+          
+        <div class="btn">
+          <button class="main__btn high" id="high">Higher</button>
+          <button class="main__btn low" id="low">Lower</button>
         </div>
+
+       
+        <div class="answerRight" id="answerRight">
+            <h3 class="answer__Text">You were right!</h3>
+            <img id='tick-circle' src="./assests/images/accept.png" alt="check-circle">
+        </div>
+        <div class="answerWrong" id="answerWrong">
+            <h3 class="answer__Text">You chose wrong!</h3>
+            <img id='cross-circle' src="./assests/images/remove.png" alt="cross">
+        </div>
+        
+
+      </div>
     </main>
-    <footer>
-        <div class="footer__wrapper">
-            <h3>Brought to you courtesy of</h3>
-            <!-- <div class="footer__names">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <h3 class="footer__heading">Brought to you courtesy of...</h3>
+        <div class="footer__names">
                 <ul class="footer__names-list">
                     <li class="footer__creator">Jonny</li>
                     <li class="footer__creator">Elizabete</li>
                     <li class="footer__creator">Marcos</li>
                 </ul>
-            </div> -->
-        </div>
+            </div>
+            <h3 class="footer__team-name">together we are ... J E M</h3>
+      </div>
     </footer>
     <script src="./js/script.js"></script>
   </body>

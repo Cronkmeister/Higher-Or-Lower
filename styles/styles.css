@@ -49,33 +49,108 @@ table {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  background-image: linear-gradient(113.1674345735deg, #175b32 51.4453125%, #76a949 91.19140625%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 460px;
+  padding: 2.5rem;
 }
 
 .main {
-  background-image: linear-gradient(#2c7d16, #41bb20);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
+  position: relative;
 }
 .main__btn {
-  text-decoration: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
   font-size: 1rem;
-  border-radius: 6px;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 240px;
+  height: 80px;
+  font-size: 1.125rem;
   font-weight: 600;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  padding: 5px;
+  transition: 0.5s ease-in-out;
+}
+.main__btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+.main .high {
+  color: #780116;
+  color: #41403e;
+  transition: 0.1s ease-in-out;
+}
+.main .high:active {
+  color: #780116;
+}
+.main .low {
+  color: #a2c41e;
+  color: #41403e;
+  transition: 0.1s ease-in-out;
+}
+.main .low:active {
+  color: #780116;
+}
+.main .btn {
+  display: flex;
+  justify-content: space-around;
+}
+.main .card {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  transition: 0.5s ease-in-out;
+  height: 200px;
+  width: 140px;
+}
+.main .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .header__wrapper {
-  background-image: url(../assests/images/jose-pablo-iglesias-kpY9410Ha2s-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/images/jose-pablo-iglesias-kpY9410Ha2s-unsplash.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: solid 3px goldenrod;
 }
 .header__heading {
+  font-family: "Neonderthaw", cursive;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: whitesmoke;
   text-align: center;
   padding-top: 2rem;
@@ -84,9 +159,93 @@ body {
 .header__subheading {
   color: whitesmoke;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   padding-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5625rem;
   font-weight: 600;
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.footer__wrapper {
+  background-image: url(../assests/images/james-walsh-QZUzkCxDIoU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  border-top: solid 3px goldenrod;
+}
+.footer__heading {
+  color: whitesmoke;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+.footer__names-list {
+  color: whitesmoke;
+  display: flex;
+}
+.footer__creator {
+  color: whitesmoke;
+  padding: 0.5rem 2rem;
+}
+.footer__team-name {
+  color: whitesmoke;
+  padding: 0.5rem 14rem;
+}
+
+.answerRight {
+  display: none;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 3rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.answer__Text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#tick-circle {
+  max-height: 150px;
+  max-width: 150px;
+  padding: 1rem;
+}
+
+#cross-circle {
+  max-height: 150px;
+  max-width: 150px;
+  padding: 1rem;
+}
+
+.answerWrong {
+  display: none;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 3rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.answerWrongToggle {
+  display: flex;
+}
+
+.answerRightToggle {
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */
