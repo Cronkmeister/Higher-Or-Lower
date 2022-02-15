@@ -1,0 +1,53 @@
+@use './Partials/css-reset' as *;
+
+body {
+    font-family: sans-serif;
+  }
+  .main {
+    background-image: linear-gradient(#2c7d16, #41bb20);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+
+    &__btn{
+      text-decoration: none;
+      background-color: #FAFBFC;
+      border: 1px solid rgba(27, 31, 35, 0.15);
+      font-size: 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      box-shadow: rgb(0 0 0 / 2%) 0 1px 3px 0;
+      padding: 5px;
+
+    }
+  }
+
+.header {
+  &__wrapper {
+    background-image: url(../assests/images/jose-pablo-iglesias-kpY9410Ha2s-unsplash.jpg);
+    background-size: cover;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2rem;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+  } 
+  &__subheading {
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+  }
+} 
