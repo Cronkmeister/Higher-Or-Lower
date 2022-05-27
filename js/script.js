@@ -17,13 +17,11 @@ const deck = axios
     );
   })
   .then((response1) => {
-    console.log(response1);
     //display it on screen
     card1 = document.createElement("img");
     card1.setAttribute("src", response1.data.cards[0].image);
     card1.classList.add("card"); //add a class
     app.appendChild(card1);
-    console.log(response1.data.cards[0]);
     //storeing value
     previousCardValue = response1.data.cards[0].value;
   });
@@ -51,7 +49,6 @@ function checkValue(event) {
     return valueConverted;
   } else {
     const valueConverted = parseInt(event, 10);
-    console.log(valueConverted);
     return valueConverted;
   }
 }
@@ -62,7 +59,6 @@ function compare(operator) {
     .then((response) => {
       //draw new card and add it to the screen
       const card1 = document.createElement("img");
-      console.log(response);
       card1.setAttribute("src", response.data.cards[0].image);
       //add a class card
       card1.classList.add("card");
@@ -82,7 +78,7 @@ function compare(operator) {
           function toggle(toggle) {
             answer.classList.toggle("answerRightToggle");
           }
-          setTimeout(toggle, 1000, (toggle));
+          setTimeout(toggle, 1000, toggle);
         } else {
           const answer = document.getElementById("answerWrong");
           answer.classList.add("answerWrongToggle");
@@ -101,7 +97,7 @@ function compare(operator) {
           setTimeout(() => {
             answer.classList.toggle("answerRightToggle");
           }, 1000);
-        } else { 
+        } else {
           const answer = document.getElementById("answerWrong");
           answer.classList.add("answerWrongToggle");
           highBtn.setAttribute("disabled", "");
@@ -124,12 +120,3 @@ highBtn.addEventListener("click", function () {
 lowBtn.addEventListener("click", function () {
   compare("<");
 });
-
-// -- Create a new card - randon card done (compare function) - new card done
-//     -- compare function:  TO-DO
-//            --newcard with previouscard
-
-// if correct -> generate a new card
-// if incorrect -> reset the game from the beginning
-
-// score counter
